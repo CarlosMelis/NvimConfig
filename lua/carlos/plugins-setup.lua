@@ -78,6 +78,24 @@ return packer.startup(function(use)
   use("rafamadriz/friendly-snippets")
 
   ----------------------
+  -- Treesitter 
+  ----------------------
+  use({
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+      ts_update()
+    end,
+  })
+
+
+  ----------------------
+  -- Autoclosing
+  ----------------------
+  use("windwp/nvim-autopairs")
+  use("windwp/nvim-ts-autotag")
+
+  ----------------------
   -- LSP servers
   ----------------------
   -- in charge of managing lsp servers, linters & formatters

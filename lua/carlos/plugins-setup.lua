@@ -88,7 +88,6 @@ return packer.startup(function(use)
     end,
   })
 
-
   ----------------------
   -- Autoclosing
   ----------------------
@@ -112,6 +111,11 @@ return packer.startup(function(use)
   use("jose-elias-alvarez/typescript.nvim")
   -- vs-code like icons for autocompletion
   use("onsails/lspkind.nvim")
+
+  ----------------------
+  -- Git signs
+  ----------------------
+  use("lewis6991/gitsigns.nvim")
 
   if packer_bootstrap then
     require("packer").sync()

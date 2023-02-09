@@ -117,6 +117,11 @@ return packer.startup(function(use)
   ----------------------
   use("lewis6991/gitsigns.nvim")
 
+  ----------------------
+  -- GitHub Copilot
+  ----------------------
+  use("github/copilot.vim")
+
   if packer_bootstrap then
     require("packer").sync()
   end

@@ -1,1 +1,1 @@
-# NvimConfig
+# Neovim config and tmux config
